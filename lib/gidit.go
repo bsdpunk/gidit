@@ -76,10 +76,10 @@ func Gisize(file1 string, wide string, hide string, args string) {
 	var width uint
 	var height uint
 	var ofile string
-	if args.OutputFile == "" {
+	if args == "" {
 		ofile = "new" + os.Args[len(os.Args)-1]
 	} else {
-		ofile = args.OutputFile
+		ofile = args
 	}
 	file, err := os.Open(file1)
 	if err != nil {
