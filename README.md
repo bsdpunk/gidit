@@ -34,7 +34,7 @@ Append an image, to the left of an image
 gadd one.png two.png
 ```
 Result is newtwo.png 
-![newtwo](newfist.png)
+![newtwo](newtwo.png)
 
 ## gbot
 Append an image to the bottom of an image
