@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 import "github.com/alexflint/go-arg"
-import gidit "./lib"
+import gidit "github.com/bsdpunk/gidit/lib"
 import "os"
 
 func main() {
