@@ -2,6 +2,13 @@
 golang command line image editor
 Use one command, gidit or install them all seperately
 
+# Install
+
+```
+go get github.com/bsdpunk/gidit
+```
+
+
 ## gisize
 Resize png file
 Examples:
