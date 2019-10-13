@@ -1,12 +1,11 @@
 package main
 
 import "fmt"
-import "github.com/alexflint/go-arg"
 import gidit "github.com/bsdpunk/gidit/lib"
 import "os"
 
 func main() {
-	switch oper := args.Operation; oper {
+	switch oper := os.Args[1]; oper {
 	case "cat":
 		gidit.Gicat(os.Args[len(os.Args)-2], os.Args[len(os.Args)-1])
 	case "append":
