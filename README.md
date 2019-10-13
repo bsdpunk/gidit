@@ -3,11 +3,22 @@ golang command line image editor
 
 ## gidit
 Resize png file
+Examples:
 ```
 gidit 1000 file.png
 gidit 1000 500 file.png
 ```
 If only one size is given the aspect ratio will be maintained
+
+Sample:
+![one](one.png)
+```
+gidit 100 one.png
+```
+
+Result is newone.png
+![newone](newone.png)
+
 
 ## gadd
 Append an image, to the left of an image
