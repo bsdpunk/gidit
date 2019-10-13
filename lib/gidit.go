@@ -109,7 +109,7 @@ func Gisize(file1 string, wide string, hide string, args string) {
 
 	m := resize.Resize(width, height, img, resize.Lanczos3)
 
-	out, err := os.Create("new" + os.Args[len(os.Args)-1])
+	out, err := os.Create(ofile)
 	if err != nil {
 		log.Fatal(err)
 	}
