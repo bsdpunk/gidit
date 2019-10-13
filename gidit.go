@@ -7,12 +7,11 @@ import "os"
 
 func main() {
 	var args struct {
-		Input      []string `arg:"positional"`
-		Operation  string   `arg:"-o,separate","help:"resize,cat or append"`
-		OutputFile string   `arg:"-f,separate","help:"output file"`
-		Width      string   `arg:"-w,separate","help:"width"`
-		Height     string   `arg:"-h,separate","help:"width"`
-		InputFile  string   `arg:"-i,separate","help:"input file"`
+		Operation  string `arg:"-o,separate","help:"resize,cat or append"`
+		OutputFile string `arg:"-f,separate","help:"output file"`
+		Width      string `arg:"-w,separate","help:"width"`
+		Height     string `arg:"-h,separate","help:"width"`
+		InputFile  string `arg:"-i,separate","help:"input file"`
 	}
 	args.OutputFile = ""
 	args.InputFile = ""
