@@ -1,7 +1,8 @@
 # Go Image Editing Command Line Tools
 golang command line image editor
+Use one command, gidit or install them all seperately
 
-## gidit
+## gisize
 Resize png file
 Examples:
 ```
@@ -23,7 +24,7 @@ Result is newone.png
 ![newone](newone.png)
 
 
-## gadd
+## giadd
 Append an image, to the left of an image
 
 
@@ -38,20 +39,20 @@ Append an image, to the left of an image
 
 
 ```
-gadd one.png two.png
+gidit -o add one.png two.png
 ```
 Result is newtwo.png 
 
 
 ![newtwo](newtwo.png)
 
-## gbot
+## giappend
 Append an image to the bottom of an image
 
 ![newtwo](newtwo.png)
 
 ```
-gbot newtwo.png newtwo.png
+gidit -o append newtwo.png newtwo.png
 ```
 
 Result is newnewtwo.png
