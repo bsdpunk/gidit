@@ -46,7 +46,7 @@ Append an image, to the left of an image
 
 
 ```
-gidit -o add one.png two.png
+gidit add one.png two.png
 ```
 Result is newtwo.png 
 
@@ -59,7 +59,7 @@ Append an image to the bottom of an image
 ![newtwo](newtwo.png)
 
 ```
-gidit -o append newtwo.png newtwo.png
+gidit append newtwo.png newtwo.png
 ```
 
 Result is newnewtwo.png
