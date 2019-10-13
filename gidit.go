@@ -10,8 +10,14 @@ func main() {
 		Input      []string `arg:"positional"`
 		Operation  string   `arg:"-o,separate","help:"resize,cat or append"`
 		OutputFile string   `arg:"-f,separate","help:"output file"`
+		Width      string   `arg:"-w,separate","help:"width"`
+		Height     string   `arg:"-h,separate","help:"width"`
+		InputFile  string   `arg:"-i,separate","help:"input file"`
 	}
 	args.OutputFile = ""
+	args.InputFile = ""
+	args.Height = ""
+	args.Width = ""
 	args.Operation = "resize"
 	arg.MustParse(&args)
 	switch oper := args.Operation; oper {
@@ -23,13 +29,12 @@ func main() {
 		// freebsd, openbsd,
 		// plan9, windows...
 		//fmt.Printf("%s.\n", os)
-		if len(os.Args) == 2 {
+		if args.InputFile != "" && args.Width != "" {
 
-			gidit.Gisize(os.Args[len(os.Args)-1], os.Args[1], "", args.OutputFile)
-		} else if len(os.Args) == 3 {
-			gidit.Gisize(os.Args[len(os.Args)-1], os.Args[1], os.Args[2], args.OutputFile)
+			gidit.Gisize(args.InputFile, args.Width, args.Height, args.OutputFile)
 		} else {
 			fmt.Println("Must Specify a png file and a size to scale to, or specify different operation")
+			os.Exit(1)
 		}
 	}
 }
