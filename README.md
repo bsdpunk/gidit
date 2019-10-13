@@ -15,6 +15,9 @@ Examples:
 ```
 gidit 1000 file.png
 gidit 1000 500 file.png
+or
+gisize 1000 file.png
+gisize 1000 500 file.png
 ```
 If only one size is given the aspect ratio will be maintained
 
@@ -24,6 +27,8 @@ Sample:
 
 ```
 gidit 30 one.png
+or
+gisize 30 one.png
 ```
 
 Result is out.png
@@ -47,6 +52,8 @@ Append an image, to the left of an image
 
 ```
 gidit add one.png two.png
+or
+giadd one.png two.png
 ```
 Result is newtwo.png 
 
@@ -60,6 +67,8 @@ Append an image to the bottom of an image
 
 ```
 gidit append newtwo.png newtwo.png
+or
+giappend newtwo.png newtwo.png
 ```
 
 Result is newnewtwo.png
