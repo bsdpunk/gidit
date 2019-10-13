@@ -17,7 +17,7 @@ gidit 30 one.png
 ```
 
 Result is newone.png
-![newone](newone.png)
+![newone](smallone.png)
 
 
 ## gadd
