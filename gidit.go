@@ -8,8 +8,10 @@ func main() {
 	switch oper := os.Args[1]; oper {
 	case "cat":
 		gidit.Gicat(os.Args[len(os.Args)-2], os.Args[len(os.Args)-1])
+		os.Exit(0)
 	case "append":
 		gidit.Giappend(os.Args[len(os.Args)-2], os.Args[len(os.Args)-1])
+		os.Exit(0)
 	default:
 		// freebsd, openbsd,
 		// plan9, windows...
