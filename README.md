@@ -13,7 +13,7 @@ If only one size is given the aspect ratio will be maintained
 Sample:
 ![one](one.png)
 ```
-gidit 100 one.png
+gidit 30 one.png
 ```
 
 Result is newone.png
