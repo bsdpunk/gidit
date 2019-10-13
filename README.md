@@ -20,13 +20,13 @@ If only one size is given the aspect ratio will be maintained
 
 Sample:
 
-![one](one.png)
+![out](one.png)
 
 ```
 gidit 30 one.png
 ```
 
-Result is newone.png
+Result is out.png
 
 ![newone](newone.png)
 
