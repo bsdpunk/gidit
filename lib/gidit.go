@@ -71,11 +71,16 @@ func Giappend(file1 string, file2 string) {
 	png.Encode(out, rgba)
 }
 
-func Gisize(file1 string, wide string, hide string) {
+func Gisize(file1 string, wide string, hide string, args string) {
 
 	var width uint
 	var height uint
-
+	var ofile string
+	if args.OutputFile == "" {
+		ofile = "new" + os.Args[len(os.Args)-1]
+	} else {
+		ofile = args.OutputFile
+	}
 	file, err := os.Open(file1)
 	if err != nil {
 		panic("No file selected")
