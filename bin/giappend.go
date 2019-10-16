@@ -26,7 +26,9 @@ func main() {
 	}
 	sp2 := image.Point{0, img1.Bounds().Dy()}
 	r2 := image.Rectangle{sp2, sp2.Add(img2.Bounds().Size())}
-	r := image.Rectangle{image.Point{0, 0}, r2.Max}
+	newPoint := img1.Bounds().Dx() + img2.Bounds().Dx()
+	twoPoint := img1.Bounds().Dy() + img2.Bounds().Dy()
+	r := image.Rectangle{image.Point{0, 0}, image.Point{newPoint, twoPoint}}
 	rgba := image.NewRGBA(r)
 	draw.Draw(rgba, img1.Bounds(), img1, image.Point{0, 0}, draw.Src)
 	draw.Draw(rgba, r2, img2, image.Point{0, 0}, draw.Src)
