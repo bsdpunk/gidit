@@ -1,7 +1,10 @@
 package main
 
 import "fmt"
+
 import gidit "github.com/bsdpunk/gidit/lib"
+
+//import "./lib"
 import "os"
 
 func main() {
