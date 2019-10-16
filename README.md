@@ -36,8 +36,8 @@ Result is out.png
 ![newone](newone.png)
 
 
-## giadd
-Append an image, to the left of an image
+## gicat
+Append an image, to the right of an image
 
 
 ![one](one.png)
@@ -51,9 +51,9 @@ Append an image, to the left of an image
 
 
 ```
-gidit add one.png two.png
+gidit cat one.png two.png
 or
-giadd one.png two.png
+gicat one.png two.png
 ```
 Result is newtwo.png 
 
