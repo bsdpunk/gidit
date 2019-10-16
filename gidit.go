@@ -15,6 +15,9 @@ func main() {
 	case "append":
 		gidit.Giappend(os.Args[len(os.Args)-2], os.Args[len(os.Args)-1])
 		os.Exit(0)
+	case "create":
+		gidit.Gicreate(os.Args[len(os.Args)-2], os.Args[len(os.Args)-1])
+		os.Exit(0)
 	default:
 		// freebsd, openbsd,
 		// plan9, windows...
