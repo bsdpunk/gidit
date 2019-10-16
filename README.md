@@ -76,3 +76,12 @@ Result is newnewtwo.png
 ![newnewtwo](newnewtwo.png)
 
 
+## gicreate
+Create empty image
+
+
+```
+gidit create 200 200
+or
+gicreate 200 200
+```
